@@ -1,11 +1,6 @@
 #!/usr/bin/python3
-
-for tens in range(10):
-    for ones in range(tens + 1, 10):
-        if tens < 9:
-            print("{:d}{:d}, ".format(tens, ones), end="")
-        else:
-            print("{:d}{:d}".format(tens, ones))
-
-print()
-
+for i in range(9):
+    for j in range(i + 1, 10):
+        if i * 10 + j < 89:
+            print("{:d}{:d}".format(i, j), end=", ")
+print("{:d}".format(89))
